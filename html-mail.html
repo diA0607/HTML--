@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Письмо</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif; 
+			font-size: 16px;
+			<!--font-weight: bold; -->
+			font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #efefdc;
+			
+            border: 1px solid #dddddd;
+        }
+        .header {
+            text-align: center;
+            background-color: #ffffff;
+			position: relative;
+        }
+		.vk {
+            position: absolute; /* Абсолютное позиционирование */
+            top: 10px; /* Отступ от верхней границы */
+            right: 10px; /* Отступ от правой границы */
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .vk-text {
+            margin-right: 10px; /* Отступ между текстом и картинкой */
+        }
+        
+        .banner {
+			height: 600px; 
+			width: 600px;
+        }
+		.banner_text {
+			font-weight: bold;
+			font-size: 20px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+			
+        }
+        .button {
+			text-align: center;
+            display: inline-block;
+            background-color: #cd5023;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .footer {
+            padding: 10px;
+            text-align: center;
+			color: #ffffff;
+            background-color: #696969;
+        }
+		/* Стили для ссылок в футере */
+        .footer a {
+            color: #ffffff; /* Белый цвет текста */
+            text-decoration: none; /* Убираем подчеркивание */
+			 
+        }
+
+        /* При наведении на ссылку в футере */
+        .footer a:hover {
+            text-decoration: underline; /* Добавляем подчеркивание при наведении */
+			color: #0000ff;
+        }
+		div.scroll-container {
+		  background-color: #808080;
+		   overflow-x: auto; /* Горизонтальный скролл */
+            white-space: nowrap; /* Изображения будут в одну строку */
+            padding: 7px;
+            width: 100%; /* Ширина контейнера - можно ограничить по желанию */
+            max-width: 600px; /* Ограничение ширины контейнера */
+		}
+
+		div.scroll-container img {
+		  padding: 5px;
+		  width: 180px; /* Размер изображения */
+          display: inline-block; /* Изображения в строку */
+		}
+    </style>
+</head>
+<body>
+    <table class="container" >
+        <tr>
+            <td class="header">
+                <img src="main.png" alt="Logo" height=100px width=100px>
+				
+				 <div class="vk">
+                    <span class="vk-text">Мы в ВК</span>
+                    
+                    <a href="https://vk.com/diana_totma">
+                        <img src="vk.png" alt="ссылка на ВК" height="25px" width="25px">
+                    </a>
+                </div>
+            </td>
+			
+        </tr>
+		
+        <tr>
+		        
+		<td align="center">
+			<p class="banner_text">Новое поступление товара!<p>    
+                <img src="ban1.png" alt="Banner Image" class="banner">
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+				<p>Магазин женской одежды "Диана" рад приветствовать вас!
+                <br>Рады сообщить, что у нас новое поступление товара!<br>У нас вы найдете стильные наряды для любого события — от изысканных вечерних платьев до повседневных образов, которые подчеркнут вашу индивидуальность.</p>
+				<p>Загляните к нам, чтобы обновить свой гардероб и открыть для себя новинки, которые идеально дополнят ваш стиль!</p>
+				<p>Ждем вас с нетерпением!</p>
+				<div class="scroll-container">
+					  <img src="foto1.jpg" alt="Фото1">
+					  <img src="foto2.jpg" alt="Фото2">
+					  <img src="foto3.jpg" alt="Фото3">
+					  <img src="foto4.jpg" alt="Фото4">
+				</div>
+				<p>А больший ассортимент вы можете посмотреть перейдя на нашу страничку в ВК</p>
+                <a align=center href="https://vk.com/diana_totma" class="button">Перейти на страницу ВК</a>
+            </td>
+			
+        </tr>
+        <tr>
+            <td class="footer">
+                <p>Есть вопросы? <a href="mailto:dianochka.alieva.02@mail.ru">Свяжитесь с нами</a>
+                </p>
+				<p>Контактный номер: <a href="tel:+79517351691">+7 951 735 1691</a></p>
+                <p><a href="https://yandex.ru/maps/org/diana/97876353156/?ll=42.762975%2C59.973020&mode=search&sctx=ZAAAAAgBEAAaKAoSCdRGdTqQYT5AERh7L75o7U1AEhIJ%2BWcG8YEdtz8RC0EOSphpmz8iBgABAgMEBSgIOABA4q4HSAFqAnJ1nQHNzMw9oAEAqAEAvQGe18lewgEGhMGKz%2BwCggIm0LzQsNCz0LDQt9C40L0g0JTQuNCw0L3QsCDRgtC%2B0YLRjNC80LCKAgCSAgUxMDg1NZoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=42.762975%2C59.973020&sspn=0.022573%2C0.006669&text=магазин%20Диана%20тотьма&z=16">Мы на Яндекс Карте</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
